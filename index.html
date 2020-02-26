@@ -11,15 +11,15 @@
   <div class="container">
 
   <header>
-   <div class="section1">
-    <p><b>Your</b>App</p>
-      <div class="intro">
-       <img class="bell_Icon" src="icons/icon-bell.svg" alt="bell">
+   <p><b>Your</b>App</p>
+    <div class="intro">
+      <img class="bell_Icon" src="icons/icon-bell.svg" alt="bell">
+       <div class="dot"></div>
+       <div class="line"></div>
        <div class="member_detail">
-        <img class="photo" src="images/ile.jpg" alt="photo_profile">
-        <p class="userName">Ilenia Piro</p>
-      </div>
-     </div>
+       <img class="photo" src="images/ile.jpg" alt="photo_profile">
+      <p class="userName">Ilenia Piro</p>
+    </div>
    </div>
   </header>
   <nav>
@@ -38,8 +38,23 @@
     </div>
   </nav>
  <main>
+   <div class="dashboard">
+     <h3> Dashboard</h3>
+     <div class="search">
+       <input type="text" id="search" placeholder="Search"/>
+     </div>
+ </div>
+
    <div class="lineChart">
+     <h4>TRAFFIC</h4>
+     <button id="hourly">Hourly</button>
+     <button id="daily">Daily</button>
+     <button id="weekly">Weekly</button>
+     <button id="monthly">Monthly</button>
+     <canvas id="myChart"></canvas>
    </div>
+
+
    <div class="dailyChart">
    </div>
    <div class="mobileUser">
@@ -56,6 +71,8 @@
    </div>
  </main>
 </div>
-    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script type="text/javascript" src="chart.js"></script>
   </body>
 </html>
