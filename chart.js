@@ -1,3 +1,5 @@
+
+//lineChart Graphic
 var ctx = document.getElementById('myChart').getContext('2d');
 
 var chart = new Chart(ctx, {
@@ -226,4 +228,73 @@ $("#monthly").on("click", function() {
         }
       }
     });
+});
+//lineChart Buttons
+//document.getElementById("hourly").addEventListener("click", function(){
+//  this.style.backgroundColor = "orange";
+//});
+
+//bar chart Graphic
+var dailyTraffic = document.getElementById('barChart').getContext('2d');
+
+var chart = new Chart(dailyTraffic, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        responsive: true,
+        maintainAspectRatio: false,
+        xLabels: ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        datasets: [{
+            backgroundColor: 'rgb(88, 114, 83)',
+            borderColor: 'rgb(56, 68, 53)',
+            data: [120, 320, 300, 180, 225, 450, 300, 280, 400, 380, 200],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          gridLines: {
+              offsetGridLines: true
+          }
+        }],
+        yAxes: [{
+          gridLines: {
+              offsetGridLines: true
+          }
+        }]
+      }
+    }
+  });
+
+// doughnutChart graphics
+
+var mobileUser = document.getElementById('doughnutChart').getContext('2d');
+
+var chart = new Chart(mobileUser, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+    responsive: true,
+    maintainAspectRatio: false,
+    labels: ["Tablets", "Phones", "Desktop"],
+    datasets: [{
+      backgroundColor: ["#01be45", "#b2fe37", "#4b6f44" ],
+      data: [20, 70, 40]
+    }]
+  },
+  options: {
+    legend: {
+      position: 'right',
+    },
+    rotation: -0.1 * Math.PI,
+  }
 });

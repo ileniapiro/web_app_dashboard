@@ -3,8 +3,8 @@ box-sizing: border-box;
 }
 
 body {
-padding: 0;
-margin:0;
+padding: 10;
+margin: 0;
 font-family: 'Rajdhani', sans-serif;
 }
 
@@ -44,15 +44,15 @@ p {text-align: left;
 }
 .bell_Icon {
   padding-right: 8px;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.6em;
+  height: 1.6em;
 }
 .dot {
   position: absolute;
-  top: 15px;
+  top: 17px;
   right: 138px;
-  height: 6px;
-  width: 6px;
+  height: 5px;
+  width: 5px;
   background-color: orange;
   border-radius: 100%;
 }
@@ -99,9 +99,10 @@ nav {
 main {
   grid-area: main;
   display:grid;
-  background-color: #d6ecd2;
+  background-color: #d1e4d0;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  grid-gap: 2px;
   grid-template-areas:
    "dashboard"
    "lineChart"
@@ -145,11 +146,103 @@ h3 {
   border-radius: 5px;
 }
 h4 {
+  display: flex;
   color: black;
+  justify-content: center;
+  width: 50%;
   font-weight: lighter;
   font-size: 1em;
-  margin-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
 }
+.lineChart {
+  grid-area: lineChart;
+  display:flex;
+  flex-direction: column;
+  background-color: #e4eec9;
+
+}
+.lineChart button {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  background-color: #e4eec9;
+}
+.mybtns {
+  display: flex;
+ justify-content: center;
+ text-align: center;
+  font-size: 8px;
+  display: flex;
+  justify-content:right;
+  margin: auto;
+}
+.dailyChart {
+  grid-area: dailyChart;
+  background-color: #cee7c0;
+}
+.mobileUser {
+  grid-area: mobileUser;
+  background-color: #b5c999;
+}
+
+.socialStat {
+  grid-area: socialStat;
+  background-color: #dbedc7;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  width: 30%;
+  border: 1px solid #5d8c55;
+  border-radius: 10%;
+}
+h5 {
+  font-size: 1em;
+  color: #5d8c55;
+  margin-bottom: auto;
+}
+.containerT,
+.containerF,
+.containerG {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #5d8c55;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+.socialGoogle p,
+.socialTwitter p,
+.socialFacebook p {
+  font-size: 1.6em;
+}
+
+
+/*@media (min-width: 882px) {
+  .lineChart button {
+    justify-content:center;
+    width: 10%;
+    border-radius: 12%;
+    border: none;
+    transition-duration: 0.4s;
+    background-color: white;
+    border: 2px solid orange;
+
+  }
+  .lineChart button:hover {
+    background-color: orange;
+    color: white;
+  }
+  }
+  */
