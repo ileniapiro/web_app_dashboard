@@ -40,14 +40,14 @@
 
  <main>
    <div class="dashboard">
-     <h3> Dashboard</h3>
+     <h1> Dashboard</h1>
      <div class="search">
        <input type="text" id="search" placeholder="Search"/>
      </div>
  </div>
 
    <div class="lineChart">
-     <h4>TRAFFIC</h4>
+     <h2>TRAFFIC</h2>
      <div class="mybtns">
       <button id="hourly">Hourly</button>
       <button id="daily">Daily</button>
@@ -60,16 +60,16 @@
    </div>
 
    <div class="dailyChart">
-    <h4>DAILY TRAFFIC</h4>
+    <h2>DAILY TRAFFIC</h2>
     <canvas id="barChart"></canvas>
    </div>
    <div class="mobileUser">
-     <h4>MOBILE USER</h4>
+     <h2>MOBILE USER</h2>
      <canvas id="doughnutChart"></canvas>
    </div>
 
    <div class="socialStat">
-    <h4>SOCIAL STATS</h4>
+    <h2>SOCIAL STATS</h2>
      <div class="wrap">
       <div class="card1">
       <div class="containerT">
@@ -83,11 +83,11 @@
       </svg>
       </div>
       <div class="socialTwitter">
-       <h5>Twitter</h5>
+       <h3>Twitter</h3>
         <p>10,345</p>
-     </div>
-     </div>
-     <div class="card2">
+      </div>
+      </div>
+      <div class="card2">
        <div class="containerG">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        	viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -110,7 +110,7 @@
        </svg>
       </div>
        <div class="socialGoogle">
-         <h5>Google+</h5>
+         <h3>Google+</h3>
            <p>8,739</p>
        </div>
      </div>
@@ -122,7 +122,7 @@
        </svg>
      </div>
      <div class="socialFacebook">
-       <h5>Facebook</h5>
+       <h3>Facebook</h3>
         <p>2,530</p>
      </div>
     </div>
@@ -130,44 +130,134 @@
   </div>
 
    <div class="newMembers">
-    <h4>NEW MEMBERS</h4>
-    <div class="group">
-     <div class="firstMember">
-       <img src="images/member-1.jpg" alt="Vic">
-        <h6>Victoria Chambers</h6>
+    <h2>NEW MEMBERS</h2>
+    <div class="groupA">
+     <div class="memberCard">
+       <img class="photoMembers" src="images/member-1.jpg" alt="Vic">
+        <div class="infoMemb">
+        <h4>Victoria Chambers</h4>
         <a href="">victoria.charmbers@example.com</a>
         <p>27/02/2020</p>
+        </div>
      </div>
-     <div class="secondMember">
-       <img src="images/member-2.jpg" alt="Dale">
-       <h6>Dale Byrd</h6>
+     <div class="memberCard">
+       <img class="photoMembers" src="images/member-2.jpg" alt="Dale">
+       <div class="infoMemb">
+       <h4>Dale Byrd</h4>
        <a href="">dale.byrd@example.com</a>
        <p>27/02/2020</p>
+       </div>
      </div>
-     <div class="thirdMember">
-       <img src="images/member-3.jpg" alt="Dawn">
-       <h6>Dawn Wood</h6>
+     <div class="memberCard">
+       <img class="photoMembers" src="images/member-3.jpg" alt="Dawn">
+       <div class="infoMemb">
+       <h4>Dawn Wood</h4>
         <a href="">dawn.wood@example.com</a>
         <p>27/02/2020</p>
+        </div>
      </div>
-     <div class="fourthMember">
-       <img src="images/member-4.jpg" alt="Dan">
-       <h6>Dan Oliver</h6>
+     <div class="memberCard">
+       <img class="photoMembers" src="images/member-4.jpg" alt="Dan">
+       <div class="infoMemb">
+       <h4>Dan Oliver</h4>
        <a href="">dan.oliver@example.com</a>
        <p>27/02/2020</p>
+       </div>
      </div>
     </div>
    </div>
 
    <div class="recentActivities">
-     <h4>RECENT ACTIVITIES</h4>
+     <h2>RECENT ACTIVITIES</h2>
+      <div class="groupB">
+       <div class="memberCard">
+        <img class="photoMembers" src="images/member-1.jpg" alt="Vic">
+         <div class="activitiesMemb">
+         <h5>Victoria Chambers commented on YourApp SEO Tips</h5>
+         <p>4 Hours Ago</p>
+         <p class="arrow">&#10095;</p>
+         </div>
+      </div>
+      <div class="memberCard">
+        <img class="photoMembers" src="images/member-2.jpg" alt="Dale">
+         <div class="activitiesMemb">
+         <h5>Dale Byrd like the post Facebook's change 2020</h5>
+         <p>4 Hours Ago</p>
+         <p class="arrow">&#10095;</p>
+        </div>
+      </div>
+      <div class="memberCard">
+        <img class="photoMembers" src="images/member-3.jpg" alt="Dawn">
+         <div class="activitiesMemb">
+         <h5>Dawn Wood commented on Facebook's change 2020</h5>
+         <p>5 Hours Ago</p>
+         <p class="arrow">&#10095;</p>
+        </div>
+      </div>
+      <div class="memberCard">
+        <img class="photoMembers" src="images/member-4.jpg" alt="Dan">
+         <div class="activitiesMemb">
+         <h5>Dan Oliver posted you're app SEO tips</h5>
+         <p>1 Day Ago</p>
+         <p class="arrow">&#10095;</p>
+       </div>
+      </div>
+    </div>
    </div>
 
    <div class="messageUsers">
+     <h2>MESSAGE USER</h2>
+      <form action="index.html" method="post">
+       <div class="msgfields">
+        <input type="text" id="msgsearch" placeholder="Search"/>
+        <textarea type="text" id="msgXuser" placeholder= "Message for User"></textarea>
+        <button class="button2">Send</button>
+       </div>
+     </form>
    </div>
 
    <div class="settings">
-   </div>
+     <h2>SETTINGS</h2>
+     <div class="radioButtons">
+      <li><input type="checkbox" class="win-switch" id="a">
+      <label for="a"><span class="sw"></span>Send Email Notification</label>
+      </li>
+      <li><input type="checkbox" class="win-switch" id="b">
+      <label for="b"><span class="sw"></span>Set Profile to Public</label>
+      </li>
+     </div>
+
+  <!-- <div class="insidelist"><label for="state">State</label>
+            <select id="state" name="user-state">
+              <option value="Italy">Italy</option>
+              <option value="France">France</option>
+              <option value="Spain">Spain</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Austria">Austria</option>
+              <option value="United-Kingdom">United Kingdom</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Greece">Greece</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Poland">Poland</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Romania">Romania</option>
+              <option value="Finland">Finland</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czechia">Czechia</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Malta">Malta</option>
+            </select><br>
+          */</div>
+   </div>-->
 
  </main>
 </div>
