@@ -65,6 +65,7 @@ p {text-align: left;
   background-color: black;
   border-radius: 20%;
 }
+
 .member_detail {
   display: flex;
   align-items: center;
@@ -158,10 +159,9 @@ h1 {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 20px;
-  background-color: yellow;
+  padding: 10px;
+  background-color: #fbf190;
   color: black;
-  flex-direction: column;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -443,7 +443,6 @@ h5 {
   margin-top: 10px;
   border-radius: 5px;
   background-color: #587253;
-
 }
 /*@media (min-width: 882px) {
   .lineChart button {
