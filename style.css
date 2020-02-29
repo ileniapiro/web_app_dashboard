@@ -325,7 +325,7 @@ h5 {
   height: 30px;
   background-color: #587253;
 }
-.settings {
+/*.settings {
   grid-area: messageUsers;
   background-color: #d6ecd2;
 }
