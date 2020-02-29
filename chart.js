@@ -1,5 +1,5 @@
 
-//lineChart Graphic
+//------------------------------------------------------------lineChart Graphic---------------------------------------------------------------------------------
 var ctx = document.getElementById('myChart').getContext('2d');
 
 var chart = new Chart(ctx, {
@@ -229,12 +229,8 @@ $("#monthly").on("click", function() {
       }
     });
 });
-//lineChart Buttons
-//document.getElementById("hourly").addEventListener("click", function(){
-//  this.style.backgroundColor = "orange";
-//});
 
-//bar chart Graphic
+//-------------------------------------------------------------bar chart Graphic----------------------------------------------------------------------------
 var dailyTraffic = document.getElementById('barChart').getContext('2d');
 
 var chart = new Chart(dailyTraffic, {
@@ -273,7 +269,7 @@ var chart = new Chart(dailyTraffic, {
     }
   });
 
-// doughnutChart graphics
+//-------------------------------------------------------- doughnutChart graphics---------------------------------------------------------------------------
 
 var mobileUser = document.getElementById('doughnutChart').getContext('2d');
 

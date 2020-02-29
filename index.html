@@ -39,12 +39,19 @@
   </nav>
 
  <main>
-   <div class="dashboard">
-     <h1> Dashboard</h1>
-     <div class="search">
-       <input type="text" id="search" placeholder="Search"/>
-     </div>
- </div>
+  <div class="dashboard">
+    <h1> Dashboard</h1>
+    <div class="search">
+    <input type="text" id="search" placeholder="Search"/>
+   </div>
+  </div>
+
+  <div class="alerting">
+    <div class="alert">
+     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+     <strong>Important!</strong> Updated charts will be added on the weekend.
+    </div>
+  </div>
 
    <div class="lineChart">
      <h2>TRAFFIC</h2>
