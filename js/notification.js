@@ -3,20 +3,13 @@ document.getElementById("dropbutton").addEventListener("click", () => {
   $('#dot').css({
         'opacity': 0
     });
-})
+});
 
-/*
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+var closebtns = document.getElementsByClassName("closeX");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+  this.parentElement.style.display = 'none';
+});
 }
-*/

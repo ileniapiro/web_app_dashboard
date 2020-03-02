@@ -66,22 +66,34 @@ p {text-align: left;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px;
+  background-color: #d1e4d0;
+  max-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 13px;
 }
-.dropdown-content span {
+.dropdown-content li {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content span:hover {
-  background-color: #f1f1f1
+.dropdown-content li:hover {
+  background-color: #d6ecd2;
 }
 .show {
   display: block;
+}
+.closeX {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+}
+.listDnM {
+  list-style-type: none;
+  padding: 0;
 }
 .member_detail {
   width:30%;
