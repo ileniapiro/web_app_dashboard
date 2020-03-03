@@ -14,11 +14,11 @@ var chart = new Chart(ctx, {
         yLabels: ["0", "10", "20", "30", "40", "50"],
         datasets: [{
             backgroundColor: 'rgba(214, 236, 210, 0.2)',
-            borderColor: 'rgb(93, 140, 85)',
+            borderColor: 'rgb(190, 139, 248)',
             data: [27, 30, 15, 35, 20, 45, 30, 17, 32, 12, 23, 27, 10],
             lineTension: 0,
             pointRadius: 5,
-            pointBackgroundColor: 'rgba(214, 236, 210, 1)'
+            pointBackgroundColor: 'rgb(232, 217, 249, 1)'
         }]
     },
 
@@ -49,11 +49,11 @@ var hourly_data = {
     yLabels: ["0", "10", "20", "30", "40", "50"],
     datasets: [{
         backgroundColor: 'rgba(214, 236, 210, 0.2)',
-        borderColor: 'rgb(93, 140, 85)',
+        borderColor: 'rgb(190, 139, 248)',
         data: [27, 30, 15, 35, 20, 45, 30, 17, 32, 12, 23, 27, 10],
         lineTension: 0,
         pointRadius: 5,
-        pointBackgroundColor: 'rgba(214, 236, 210, 1)'
+        pointBackgroundColor: 'rgba(232, 217, 249, 1)'
       }
   ]
 };
@@ -72,11 +72,11 @@ $("#hourly").on("click", function() {
           yLabels: ["0", "10", "20", "30", "40", "50"],
           datasets: [{
               backgroundColor: 'rgba(214, 236, 210, 0.2)',
-              borderColor: 'rgb(93, 140, 85)',
+              borderColor: 'rgb(190, 139, 248)',
               data: [27, 30, 15, 35, 20, 45, 30, 17, 32, 12, 23, 27, 10],
               lineTension: 0,
               pointRadius: 5,
-              pointBackgroundColor: 'rgba(214, 236, 210, 1)'
+              pointBackgroundColor: 'rgba(232, 217, 249, 1)'
           }]
       },
 
@@ -115,11 +115,11 @@ $("#daily").on("click", function() {
           yLabels: ["0", "100", "200", "300", "400", "500"],
           datasets: [{
               backgroundColor: 'rgba(214, 236, 210, 0.2)',
-              borderColor: 'rgb(93, 140, 85)',
+              borderColor: 'rgb(190, 139, 248)',
               data: [220, 320, 300, 150, 225, 450, 300, 280, 400, 380, 200],
               lineTension: 0,
               pointRadius: 5,
-              pointBackgroundColor: 'rgba(214, 236, 210, 1)'
+              pointBackgroundColor: 'rgba(232, 217, 249, 1)'
           }]
       },
 
@@ -158,11 +158,11 @@ $("#weekly").on("click", function() {
           yLabels: ["500", "1000", "1500", "2000", "2500"],
           datasets: [{
               backgroundColor: 'rgba(214, 236, 210, 0.2)',
-              borderColor: 'rgb(93, 140, 85)',
+              borderColor: 'rgb(190, 139, 248)',
               data: [0, 750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250],
               lineTension: 0,
               pointRadius: 5,
-              pointBackgroundColor: 'rgba(214, 236, 210, 1)'
+              pointBackgroundColor: 'rgba(232, 217, 249, 1)'
           }]
       },
 
@@ -201,11 +201,11 @@ $("#monthly").on("click", function() {
           yLabels: ["5000", "10000", "15000", "20000", "25000"],
           datasets: [{
               backgroundColor: 'rgba(214, 236, 210, 0.2)',
-              borderColor: 'rgb(93, 140, 85)',
+              borderColor: 'rgb(190, 139, 248)',
               data: [2700, 3300, 15000, 13500, 23000, 4500, 3340, 17900, 22422, 12000, 9000],
               lineTension: 0,
               pointRadius: 5,
-              pointBackgroundColor: 'rgba(214, 236, 210, 1)'
+              pointBackgroundColor: 'rgba(232, 217, 249, 1)'
           }]
       },
 
@@ -243,8 +243,8 @@ var chart = new Chart(dailyTraffic, {
         maintainAspectRatio: false,
         xLabels: ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
         datasets: [{
-            backgroundColor: 'rgb(88, 114, 83)',
-            borderColor: 'rgb(56, 68, 53)',
+            backgroundColor: 'rgb(243, 164, 40)',
+            borderColor: 'rgb(237, 204, 128)',
             data: [120, 320, 300, 180, 225, 450, 300, 280, 400, 380, 200],
         }]
     },
@@ -283,7 +283,7 @@ var chart = new Chart(mobileUser, {
     maintainAspectRatio: false,
     labels: ["Tablets", "Phones", "Desktop"],
     datasets: [{
-      backgroundColor: ["#01be45", "#b2fe37", "#4b6f44" ],
+      backgroundColor: ["#04c7c1", "#2d6361", "#6bf4f0" ],
       data: [20, 70, 40]
     }]
   },
