@@ -24,14 +24,14 @@ header {
   background-color: #3D5B81;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  text-align: right;
   margin-left: 0;
   margin-right: 0;
+  height: 50px;
 }
 
 p {
   text-align: left;
-  width: 30%;
   font-size: 2em;
   padding-top: 7px;
   margin-top: 0;
@@ -42,9 +42,30 @@ p {
 
 .intro {
   display: inline;
+  text-align: right;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 30%;
+  margin-left: auto;
+}
+
+.member_detail {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.photo {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+
+.userName {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: .9em;
+  font-weight: bold;
 }
 
 .bell_Icon {
@@ -74,10 +95,11 @@ p {
   display: none;
   position: absolute;
   background-color: #3D5B81;
-  max-width: 135px;
+  max-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  font-size: 13px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .dropdown-content li {
@@ -102,24 +124,6 @@ p {
 .listDnM {
   list-style-type: none;
   padding: 0;
-}
-
-.member_detail {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.photo {
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
-}
-
-.userName {
-  margin-left: 10px;
-  font-size: 1em;
-  font-weight: bold;
 }
 
 nav {
@@ -162,7 +166,7 @@ main {
   display: flex;
   grid-area: dashboard;
   background-color: #20284c;
-  ;
+  align-items: center;
 }
 
 h1 {
@@ -178,9 +182,9 @@ h1 {
 .search {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 90%;
   margin: 0;
-  padding-left: 110px;
   border-left: 1px solid white;
   border-bottom: 1px solid white;
 }
@@ -188,10 +192,9 @@ h1 {
 #search {
   width: 80%;
   margin: auto;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
-  height: 30px;
+  height: 35px;
   font-family: 'Comfortaa', sans-serif;
 }
 
@@ -219,7 +222,7 @@ h1 {
   color: black;
   font-weight: bold;
   float: right;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
@@ -458,7 +461,7 @@ h5 {
 }
 
 #msgsearch {
-  height: 30px;
+  height: 35px;
   font-family: 'Comfortaa', sans-serif;
 }
 
@@ -473,7 +476,7 @@ h5 {
 }
 
 .button2 {
-  height: 30px;
+  height: 35px;
   background-color: #3D5B81;
   font-family: 'Comfortaa', sans-serif;
   color: white;
@@ -564,7 +567,7 @@ h5 {
 .buttonSave,
 .buttonDelete {
   width: 40%;
-  height: 30px;
+  height: 35px;
   margin-top: 10px;
   margin-bottom: 30px;
   border-radius: 5px;
@@ -574,7 +577,9 @@ h5 {
 }
 
 @media (min-width: 768px) {
-  .alert {
+
+  .alert,
+  .closebtn {
     font-size: 15px;
   }
 
@@ -589,13 +594,6 @@ h5 {
       "newMembers recentActivities"
       "messageUsers messageUsers"
       "settings settings"
-  }
-
-  .intro {
-    display: inline;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 50%;
   }
 
   .newMembers,
@@ -630,10 +628,23 @@ h5 {
   }
 
   header {
-    height: 80px;
+    height: 70px;
     align-items: center;
   }
-
+  header p {
+    padding-left: 15px;
+  }
+  .member_detail {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .userName {
+    font-size: 17px;
+    margin-left: 0;
+  }
+  .dropbtn {
+    padding-right: 20px;
+  }
   .dot {
     position: absolute;
     top: 25px;
@@ -667,6 +678,12 @@ h5 {
     font-size: 15px;
   }
 
+  #search {
+    width: 50%;
+
+    margin: 13px;
+  }
+
   main {
     grid-template-areas:
       "dashboard dashboard"
@@ -678,13 +695,6 @@ h5 {
       "messageUsers settings"
   }
 
-  .intro {
-    display: inline;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 60%;
-  }
-
   h2 {
     display: flex;
     justify-content: flex-start;
@@ -693,6 +703,7 @@ h5 {
 
   .mybtns {
     display: flex;
+    margin-top: 20px;
     margin-left: 0;
   }
 
@@ -703,8 +714,8 @@ h5 {
   }
 
   .mybtns h2 {
+    margin-top: auto;
     margin-left: 0;
-    justify-content: flex-start;
   }
 
   .mybtns li {
@@ -718,20 +729,35 @@ h5 {
     height: 25px;
   }
 
-  .dailyChart,
-  .mobileUser,
+  .dailyChart {
+    border-top: 1px solid #633E85;
+    border-bottom: 1px solid #633E85;
+    border-right: 1px solid #633E85;
+  }
+  .mobileUser {
+    border-top: 1px solid #633E85;
+    border-bottom: 1px solid #633E85;
+    border-left: 1px solid #633E85;
+  }
+
+  .lineChart {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .dailyChart {
+    padding-left: 50px;
+  }
+
+  .mobileUser {
+    padding-right: 50px;
+  }
+
   .newMembers,
   .recentActivities,
   .messageUsers,
   .settings {
     border: 1px solid #633E85;
-  }
-
-  .lineChart,
-  .dailyChart,
-  .mobileUser {
-    margin-left: 25px;
-    margin-right: 20px;
   }
 
   .card1,
