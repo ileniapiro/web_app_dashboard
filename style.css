@@ -21,7 +21,7 @@ body {
 
 header {
   grid-area: header;
-  background-color: #66023c;
+  background-color: #3D5B81;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -73,7 +73,7 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #be8bf8;
+  background-color: #3D5B81;
   max-width: 135px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -81,7 +81,7 @@ p {
 }
 
 .dropdown-content li {
-  color: black;
+  color: white;
   padding: 8px 10px;
   text-decoration: none;
   display: block;
@@ -124,7 +124,7 @@ p {
 
 nav {
   grid-area: nav;
-  background-color: #be8bf8;
+  background-color: #633E85;
   display: flex;
   text-align: center;
   align-items: center;
@@ -206,7 +206,7 @@ h1 {
   align-items: center;
   width: 95%;
   padding: 1em;
-  background-color: #a00b49;
+  background-color: #B09BC2;
   color: black;
   border: 1px solid black;
   border-radius: 5px;
@@ -219,7 +219,7 @@ h1 {
   color: black;
   font-weight: bold;
   float: right;
-  font-size: 22px;
+  font-size: 15px;
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
@@ -241,23 +241,29 @@ h2 {
   margin: auto;
 }
 
-canvas {
-  width: 100% !important;
-  margin-top: 20px;
+.mybtns h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.mybtns li {
+  list-style: none;
+  display: inline;
 }
 
 .lineChart {
   grid-area: lineChart;
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .lineChart button {
-  display: flex;
   text-align: center;
-  background-color: #be8bf8;
   margin-bottom: 5px;
+  color: white;
+  border: none;
+  background: none;
 }
 
 #hourly,
@@ -269,11 +275,14 @@ canvas {
 }
 
 .mybtns {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  display: table;
   font-size: 8px;
   margin: auto;
+}
+
+canvas {
+  width: 100% !important;
+  margin-top: 20px;
 }
 
 .dailyChart {
@@ -288,8 +297,12 @@ canvas {
 
 .socialStat {
   grid-area: socialStat;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.socialStat h2 {
+  margin-bottom: 10px;
 }
 
 .wrap {
@@ -310,7 +323,7 @@ canvas {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: .9em;
   color: white;
   margin-bottom: auto;
 }
@@ -322,7 +335,6 @@ h3 {
   justify-content: flex-start;
   align-items: center;
   background-color: #20284c;
-  ;
   border-radius: 100%;
   width: 45px;
   height: 45px;
@@ -379,6 +391,7 @@ h4 {
 
 .memberCard {
   margin: 10px;
+  margin-left: 20px;
   border-bottom: 1px solid #20284c;
 }
 
@@ -409,7 +422,7 @@ h5 {
   font-weight: lighter;
   margin: 0;
   padding-top: 5px;
-  color: #be8bf8;
+  color: #218ea9;
 }
 
 .arrow {
@@ -427,6 +440,12 @@ h5 {
 .msgfields {
   display: flex;
   flex-direction: column;
+}
+
+.ui-menu-item {
+  background-color: white;
+  list-style: none;
+  width: 60vw;
 }
 
 #msgsearch,
@@ -451,12 +470,11 @@ h5 {
 
 .settings {
   grid-area: settings;
-  background-color: #20284c;
 }
 
 .button2 {
   height: 30px;
-  background-color: #66023c;
+  background-color: #3D5B81;
   font-family: 'Comfortaa', sans-serif;
   color: white;
 }
@@ -499,14 +517,14 @@ h5 {
   margin-right: 10px;
   margin-left: 10px;
   background-color: transparent;
-  border: 2px solid #be8bf8;
+  border: 2px solid #218ea9;
   transition: all ease 300ms;
 }
 
 .win-switch+label span.sw:before {
   content: '';
   position: absolute;
-  background-color: #be8bf8;
+  background-color: #218ea9;
   margin-top: 3px;
   margin-left: 3px;
   height: 15px;
@@ -550,14 +568,14 @@ h5 {
   margin-top: 10px;
   margin-bottom: 30px;
   border-radius: 5px;
-  background-color: #66023c;
+  background-color: #3D5B81;
   font-family: 'Comfortaa', sans-serif;
   color: white;
 }
 
 @media (min-width: 768px) {
   .alert {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   main {
@@ -582,7 +600,24 @@ h5 {
 
   .newMembers,
   .recentActivities {
-    border: 1px solid #66023c;
+    border: 1px solid #633E85;
+  }
+  .ui-menu-item {
+    width: 65vw;
+  }
+  .messageUsers h2,
+  .settings h2 {
+    margin-top: 20px;
+  }
+
+  #msgsearch,
+  #msgXuser {
+    margin-bottom: 20px;
+  }
+
+  .timezone,
+  .buttonSD {
+    margin-bottom: 10px;
   }
 }
 
@@ -650,16 +685,37 @@ h5 {
     margin-left: 60%;
   }
 
-  .lineChart button:hover {
-    background-color: #66023c;
-    color: white;
+  h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
   }
 
-  h2 {
-    width: 10%;
-    margin-right: 10px;
-    margin-left: 10px;
+  .mybtns {
+    display: flex;
+    margin-left: 0;
+  }
+
+  .toplist {
+    display: flex;
+    width: 85vw;
+    justify-content: flex-end;
+  }
+
+  .mybtns h2 {
+    margin-left: 0;
     justify-content: flex-start;
+  }
+
+  .mybtns li {
+    padding-top: 5px;
+  }
+
+  .lineChart button:hover {
+    background-color: #633E85;
+    color: white;
+    border-radius: 10%;
+    height: 25px;
   }
 
   .dailyChart,
@@ -668,7 +724,7 @@ h5 {
   .recentActivities,
   .messageUsers,
   .settings {
-    border: 1px solid #66023c;
+    border: 1px solid #633E85;
   }
 
   .lineChart,
@@ -676,5 +732,32 @@ h5 {
   .mobileUser {
     margin-left: 25px;
     margin-right: 20px;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    display: flex;
+  }
+
+  .memberCard {
+    margin-bottom: 20px;
+  }
+  .ui-menu-item {
+    width: 45vw;
+  }
+
+  .msgfields {
+    margin-bottom: 40px;
+  }
+
+  #msgsearch,
+  #msgXuser {
+    margin-bottom: 20px;
+  }
+
+  .timezone,
+  .buttonSD {
+    margin-bottom: 20px;
   }
 }

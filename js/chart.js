@@ -15,7 +15,7 @@ var chart = new Chart(ctx, {
         datasets: [{
             backgroundColor: 'rgba(214, 236, 210, 0.2)',
             borderColor: 'rgb(190, 139, 248)',
-            data: [27, 30, 15, 35, 20, 45, 30, 17, 32, 12, 23, 27, 10],
+            data: [27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
             lineTension: 0,
             pointRadius: 5,
             pointBackgroundColor: 'rgb(232, 217, 249, 1)'
@@ -50,7 +50,7 @@ var hourly_data = {
     datasets: [{
         backgroundColor: 'rgba(214, 236, 210, 0.2)',
         borderColor: 'rgb(190, 139, 248)',
-        data: [27, 30, 15, 35, 20, 45, 30, 17, 32, 12, 23, 27, 10],
+        data: [27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
         lineTension: 0,
         pointRadius: 5,
         pointBackgroundColor: 'rgba(232, 217, 249, 1)'
@@ -73,7 +73,7 @@ $("#hourly").on("click", function() {
           datasets: [{
               backgroundColor: 'rgba(214, 236, 210, 0.2)',
               borderColor: 'rgb(190, 139, 248)',
-              data: [27, 30, 15, 35, 20, 45, 30, 17, 32, 12, 23, 27, 10],
+              data: [27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
               lineTension: 0,
               pointRadius: 5,
               pointBackgroundColor: 'rgba(232, 217, 249, 1)'
@@ -232,7 +232,9 @@ $("#monthly").on("click", function() {
 
 //-------------------------------------------------------------bar chart Graphic----------------------------------------------------------------------------
 var dailyTraffic = document.getElementById('barChart').getContext('2d');
-
+var gradientFill = dailyTraffic.createLinearGradient(0, 0, 0, 1000);
+gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.6)");
+gradientFill.addColorStop(0, "rgba(99, 62, 133, 0.6)");
 var chart = new Chart(dailyTraffic, {
     // The type of chart we want to create
     type: 'bar',
@@ -243,7 +245,7 @@ var chart = new Chart(dailyTraffic, {
         maintainAspectRatio: false,
         xLabels: ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
         datasets: [{
-            backgroundColor: 'rgb(243, 164, 40)',
+            backgroundColor: gradientFill,
             borderColor: 'rgb(237, 204, 128)',
             data: [120, 320, 300, 180, 225, 450, 300, 280, 400, 380, 200],
         }]
@@ -283,7 +285,7 @@ var chart = new Chart(mobileUser, {
     maintainAspectRatio: false,
     labels: ["Tablets", "Phones", "Desktop"],
     datasets: [{
-      backgroundColor: ["#04c7c1", "#2d6361", "#6bf4f0" ],
+      backgroundColor: ["#218ea9", "#B09BC2", "#6bf4f0" ],
       data: [20, 70, 40]
     }]
   },
