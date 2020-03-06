@@ -6,6 +6,7 @@
     padding-top: .4em;
     padding-bottom: .4em;
   }
+
   .userName {
     padding-right: 15px;
   }
@@ -24,6 +25,11 @@
       "settings settings"
   }
 
+  .lineChart button {
+    background-color: #633E85;
+    border-radius: 10%;
+  }
+
   .card1,
   .card2,
   .card3 {
@@ -36,11 +42,6 @@
   .containerT {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .lineChart button {
-    background-color: #633E85;
-    border-radius: 10%;
   }
 
   .newMembers,
@@ -69,6 +70,7 @@
 }
 
 @media (min-width: 1024px) {
+  
   .container {
     grid-template-columns: 5% 95%;
     grid-template-areas:
@@ -100,15 +102,22 @@
     margin-right: 0;
   }
 
-  .dropbtn {
-    padding-right: 20px;
-  }
-
   .dot {
     position: absolute;
     top: 25px;
     float: right;
     overflow: hidden;
+  }
+
+  .alert,
+  .closebtn {
+    font-size: 15px;
+    padding-top: .4em;
+    padding-bottom: .4em;
+  }
+
+  .userName {
+    padding-right: 15px;
   }
 
   .dropdown-content {

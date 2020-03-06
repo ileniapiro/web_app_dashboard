@@ -8,7 +8,7 @@ const newMembers = [
 ];
 
 user.addEventListener("keyup", () => {
-  $( "#msgsearch" ).autocomplete({
-      source: newMembers
-    });
+  $("#msgsearch").autocomplete({
+    source: newMembers
+  });
 });

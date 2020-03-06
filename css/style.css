@@ -8,7 +8,6 @@ body {
   font-family: 'Comfortaa', sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
-
 }
 
 .container {
@@ -22,6 +21,7 @@ body {
     "main"
 }
 
+/*****************************************************************************HEADER******************************************************************************************/
 header {
   grid-area: header;
   background-color: #3D5B81;
@@ -42,6 +42,7 @@ header {
   color: white;
   padding-left: 10px;
 }
+
 p {
   text-align: left;
   font-size: 2em;
@@ -50,6 +51,7 @@ p {
   margin-bottom: 0;
   color: white;
 }
+
 .intro {
   display: inline;
   text-align: right;
@@ -90,10 +92,12 @@ p {
   cursor: pointer;
   padding-left: 0;
 }
+
 ul {
-   padding: 0;
-   margin: 0;
+  padding: 0;
+  margin: 0;
 }
+
 .dot {
   position: absolute;
   background-color: orange;
@@ -134,11 +138,7 @@ ul {
   position: relative;
 }
 
-.listDnM {
-  list-style-type: none;
-  padding: 0;
-}
-
+/******************************************************************************NAV********************************************************************************************/
 nav {
   grid-area: nav;
   background-color: #633E85;
@@ -157,6 +157,7 @@ nav {
   margin-left: 15px
 }
 
+/*****************************************************************************MAIN********************************************************************************************/
 main {
   grid-area: main;
   display: grid;
@@ -175,6 +176,7 @@ main {
     "settings"
 }
 
+/***************************************************************************DASHBOARD*****************************************************************************************/
 .dashboard {
   display: flex;
   grid-area: dashboard;
@@ -245,6 +247,7 @@ h1 {
   color: orange;
 }
 
+/***************************************************************************LINE CHART****************************************************************************************/
 h2 {
   display: flex;
   color: white;
@@ -274,7 +277,6 @@ h2 {
   flex-direction: column;
   margin-top: 10px;
 }
-
 
 .lineChart button {
   text-align: center;
@@ -306,16 +308,19 @@ canvas {
   margin-bottom: 30px;
 }
 
+/***************************************************************************BAR CHART*****************************************************************************************/
 .dailyChart {
   grid-area: dailyChart;
   margin-top: 15px;
 }
 
+/*************************************************************************DOUGHNUT CHART**************************************************************************************/
 .mobileUser {
   grid-area: mobileUser;
   margin-top: 15px;
 }
 
+/****************************************************************************SOCIAL STAT**************************************************************************************/
 .socialStat {
   grid-area: socialStat;
   margin-top: 10px;
@@ -371,9 +376,11 @@ h3 {
   font-size: 1.4em;
 }
 
+/****************************************************************************NEW MEMBERS**************************************************************************************/
 .newMembers {
   grid-area: newMembers;
 }
+
 .newMembers h2 {
   margin-top: 30px;
 }
@@ -422,16 +429,18 @@ h4 {
   border-bottom: 1px solid #20284c;
 }
 
-.groupB {
-  display: flex;
-  flex-direction: column;
-}
-
+/*************************************************************************RECENT ACTIVITIES***********************************************************************************/
 .recentActivities {
   grid-area: recentActivities;
 }
+
 .recentActivities h2 {
   margin-top: 30px;
+}
+
+.groupB {
+  display: flex;
+  flex-direction: column;
 }
 
 h5 {
@@ -463,12 +472,15 @@ h5 {
   padding-bottom: 5px;
 }
 
+/***************************************************************************MESSAGE USER**************************************************************************************/
 .messageUsers {
   grid-area: messageUsers;
 }
-.messageUsers h2{
+
+.messageUsers h2 {
   margin-top: 30px;
 }
+
 .msgfields {
   display: flex;
   flex-direction: column;
@@ -500,12 +512,15 @@ h5 {
   font-family: 'Comfortaa', sans-serif;
 }
 
+/****************************************************************************SETTINGS*****************************************************************************************/
 .settings {
   grid-area: settings;
 }
+
 .settings h2 {
   margin-top: 30px;
 }
+
 .button2 {
   height: 35px;
   background-color: #3D5B81;
