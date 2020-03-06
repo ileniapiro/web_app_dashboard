@@ -85,8 +85,12 @@ p {
   border-right: 1px solid white;
   background: none;
   cursor: pointer;
+  padding-left: 0;
 }
-
+ul {
+   padding: 0;
+   margin: 0;
+}
 .dot {
   position: absolute;
   background-color: orange;
@@ -125,7 +129,6 @@ p {
   font-weight: bold;
   cursor: pointer;
   position: relative;
-}
 }
 
 .listDnM {
@@ -226,7 +229,7 @@ h1 {
 }
 
 .closebtn {
-  color: black;
+  color: red;
   font-weight: bold;
   float: right;
   font-size: 1.1em;
@@ -413,7 +416,6 @@ h4 {
 
 .memberCard {
   margin: 10px;
-  margin-left: 20px;
   border-bottom: 1px solid #20284c;
 }
 
@@ -508,7 +510,7 @@ h5 {
   color: white;
 }
 
-.radioButtons {
+.checkButtons {
   width: 80%;
   text-align: center;
   margin: auto;
@@ -518,7 +520,7 @@ h5 {
   padding-bottom: 0;
 }
 
-.radioButtons li {
+.checkButtons li {
   list-style: none;
 }
 

@@ -42,22 +42,6 @@ var chart = new Chart(ctx, {
     }
   });
 
-var hourly_data = {
-    responsive: true,
-    maintainAspectRatio: false,
-    xLabels: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"],
-    yLabels: ["0", "10", "20", "30", "40", "50"],
-    datasets: [{
-        backgroundColor: 'rgba(214, 236, 210, 0.2)',
-        borderColor: 'rgb(190, 139, 248)',
-        data: [27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
-        lineTension: 0,
-        pointRadius: 5,
-        pointBackgroundColor: 'rgba(232, 217, 249, 1)'
-      }
-  ]
-};
-
 $("#hourly").on("click", function() {
   var context1 = document.querySelector('#myChart').getContext('2d');
   var chart = new Chart(context1, {
