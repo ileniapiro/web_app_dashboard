@@ -6,6 +6,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Comfortaa', sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+
 }
 
 .container {
@@ -70,7 +73,7 @@ p {
 
 .userName {
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: .9em;
   font-weight: bold;
 }

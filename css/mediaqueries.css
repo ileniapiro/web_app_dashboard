@@ -6,6 +6,9 @@
     padding-top: .4em;
     padding-bottom: .4em;
   }
+  .userName {
+    padding-right: 15px;
+  }
 
   main {
     grid-template-columns: 50% 50%;
@@ -94,6 +97,7 @@
   .userName {
     font-size: 17px;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .dropbtn {
@@ -284,7 +288,7 @@
   }
 
   .ui-menu-item {
-    width: 45vw;
+    width: 38vw;
   }
 
   .msgfields {
