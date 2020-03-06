@@ -30,6 +30,15 @@ header {
   height: 50px;
 }
 
+.mainH {
+  text-align: left;
+  font-size: 2em;
+  padding-top: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  padding-left: 10px;
+}
 p {
   text-align: left;
   font-size: 2em;
@@ -38,7 +47,6 @@ p {
   margin-bottom: 0;
   color: white;
 }
-
 .intro {
   display: inline;
   text-align: right;
@@ -204,11 +212,11 @@ h1 {
 
 .alert {
   display: flex;
-  font-size: 12px;
+  font-size: .7em;
   align-items: center;
   width: 95%;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .6em;
+  padding-bottom: .6em;
   background-color: #B09BC2;
   color: black;
   border: 1px solid black;
@@ -221,7 +229,7 @@ h1 {
   color: black;
   font-weight: bold;
   float: right;
-  font-size: 12px;
+  font-size: 1.1em;
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
@@ -319,10 +327,12 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
   width: 30%;
+  height: 80px;
   border: 1px solid white;
-  border-radius: 10%;
+  border-radius: 3%;
 }
 
 h3 {
@@ -341,6 +351,12 @@ h3 {
   border-radius: 100%;
   width: 45px;
   height: 45px;
+}
+
+.socialGoogle,
+.socialTwitter,
+.socialFacebook {
+  padding-right: 3px;
 }
 
 .socialGoogle p,
@@ -377,19 +393,19 @@ h4 {
 }
 
 .infoMemb {
-  width: 100%;
+  width: 87%;
   float: right;
 }
 
 .infoMemb a {
-  font-size: .9em;
+  font-size: .8em;
   text-decoration: none;
   color: #218ea9;
 }
 
 .infoMemb p {
   width: 20%;
-  font-size: .8em;
+  font-size: 12px;
   margin-left: 0;
   padding-top: 0;
   float: right;
@@ -414,7 +430,7 @@ h4 {
 }
 
 h5 {
-  font-size: .9em;
+  font-size: .8em;
   margin-top: auto;
   margin-bottom: auto;
   font-weight: lighter;
@@ -422,7 +438,7 @@ h5 {
 }
 
 .activitiesMemb {
-  width: 88%;
+  width: 87%;
   float: right;
 }
 
@@ -438,10 +454,8 @@ h5 {
 
 .arrow {
   width: 5%;
-  font-size: .9em;
-  margin-left: auto;
-  padding-top: 0;
   float: right;
+  padding-bottom: 5px;
 }
 
 .messageUsers {
@@ -586,229 +600,4 @@ h5 {
   background-color: #3D5B81;
   font-family: 'Comfortaa', sans-serif;
   color: white;
-}
-
-@media (min-width: 768px) {
-
-  .alert,
-  .closebtn {
-    font-size: 15px;
-  }
-
-  main {
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-      "dashboard dashboard"
-      "alerting alerting"
-      "lineChart lineChart"
-      "dailyChart dailyChart"
-      "mobileUser mobileUser"
-      "socialStat socialStat"
-      "newMembers recentActivities"
-      "messageUsers messageUsers"
-      "settings settings"
-  }
-
-  .lineChart button {
-    background-color: #633E85;
-    border-radius: 10%;
-  }
-
-  .newMembers,
-  .recentActivities {
-    border: 1px solid #633E85;
-  }
-  .ui-menu-item {
-    width: 65vw;
-  }
-  .messageUsers h2,
-  .settings h2 {
-    margin-top: 20px;
-  }
-
-  #msgsearch,
-  #msgXuser {
-    margin-bottom: 20px;
-  }
-
-  .timezone,
-  .buttonSD {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    grid-template-columns: 5% 95%;
-    grid-template-areas:
-      "header header"
-      "nav main";
-  }
-
-  header {
-    height: 70px;
-    align-items: center;
-  }
-  header p {
-    padding-left: 15px;
-  }
-  .member_detail {
-    padding-left: 20px;
-    padding-right: 15px;
-  }
-  .userName {
-    font-size: 17px;
-    margin-left: 0;
-  }
-  .dropbtn {
-    padding-right: 20px;
-  }
-  .dot {
-    position: absolute;
-    top: 25px;
-    float: right;
-    overflow: hidden;
-  }
-
-  .dropdown-content {
-    max-width: 150px;
-    font-size: 14px;
-  }
-
-  .dropdown-content li {
-    padding: 8px 8px;
-  }
-
-  .dropdown-content li:hover {
-    background-color: #20284c;
-    color: white;
-  }
-
-  nav {
-    display: block;
-  }
-
-  .icons {
-    margin-right: 0;
-    margin-top: 40px;
-  }
-
-
-  .alert {
-    font-size: 15px;
-  }
-
-  #search {
-    width: 50%;
-
-    margin: 13px;
-  }
-
-  main {
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-      "dashboard dashboard"
-      "alerting alerting"
-      "lineChart lineChart"
-      "dailyChart mobileUser"
-      "socialStat socialStat"
-      "newMembers recentActivities"
-      "messageUsers settings";
-  }
-
-  h2 {
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px;
-  }
-
-  .mybtns {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-
-  .toplist {
-    display: flex;
-    width: 85vw;
-    justify-content: flex-end;
-  }
-
-  .mybtns h2 {
-    margin-top: auto;
-    margin-left: 0;
-  }
-
-  .mybtns li {
-    padding-top: 5px;
-  }
-
-  .lineChart button {
-    background: none;
-    padding: 10px 15px;
-  }
-
-  .lineChart button:hover {
-    background-color: #633E85;
-    color: white;
-    border-radius: 10%;
-  }
-
-  .dailyChart {
-    border-top: 1px solid #633E85;
-    border-bottom: 1px solid #633E85;
-    border-right: 1px solid #633E85;
-  }
-  .mobileUser {
-    border-top: 1px solid #633E85;
-    border-bottom: 1px solid #633E85;
-    border-left: 1px solid #633E85;
-  }
-
-  .lineChart {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .dailyChart {
-    padding-left: 50px;
-  }
-
-  .mobileUser {
-    padding-right: 50px;
-  }
-
-  .newMembers,
-  .recentActivities,
-  .messageUsers,
-  .settings {
-    border: 1px solid #633E85;
-  }
-
-  .card1,
-  .card2,
-  .card3 {
-    display: flex;
-  }
-
-  .memberCard {
-    margin-bottom: 20px;
-  }
-  .ui-menu-item {
-    width: 45vw;
-  }
-
-  .msgfields {
-    margin-bottom: 40px;
-  }
-
-  #msgsearch,
-  #msgXuser {
-    margin-bottom: 20px;
-  }
-
-  .timezone,
-  .buttonSD {
-    margin-bottom: 20px;
-  }
 }
