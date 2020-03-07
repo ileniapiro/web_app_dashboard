@@ -66,5 +66,4 @@ $("#buttonDelete").on("click", function() {
   setTimeout(() => {
     document.getElementById("buttonDelete").style.background = "#3d5b81";
   }, 3000);
-  console.log(document.getElementById("buttonDelete"));
 });
