@@ -332,6 +332,14 @@ canvas {
   justify-content: center;
 }
 
+.twitter,
+.google,
+.facebook {
+  background-color: #633E85;
+  border-radius: 100%;
+  padding: 6px;
+}
+
 .card1,
 .card2,
 .card3 {
@@ -346,11 +354,6 @@ canvas {
   border-radius: 3%;
 }
 
-h3 {
-  font-size: .8em;
-  color: white;
-  margin-bottom: auto;
-}
 
 .containerT,
 .containerF,
@@ -360,8 +363,14 @@ h3 {
   align-items: center;
   background-color: #20284c;
   border-radius: 100%;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
+}
+
+h3 {
+  font-size: .8em;
+  color: white;
+  margin-bottom: auto;
 }
 
 .socialGoogle,
