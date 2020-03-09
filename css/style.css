@@ -335,9 +335,7 @@ canvas {
 .twitter,
 .google,
 .facebook {
-  background-color: #633E85;
-  border-radius: 100%;
-  padding: 6px;
+  width: 30px;
 }
 
 .card1,
@@ -354,15 +352,14 @@ canvas {
   border-radius: 3%;
 }
 
-
 .containerT,
 .containerF,
 .containerG {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #20284c;
+  background-color: #633E85;
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
 }

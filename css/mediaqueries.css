@@ -42,11 +42,9 @@
     margin-right: 7px;
   }
 
+  .containerT,
   .containerF,
-  .containerG,
-  .containerT {
-    margin-left: 10px;
-    margin-right: 10px;
+  .containerG {
     width: 55px;
     height: 55px;
   }
@@ -233,18 +231,18 @@
     padding-right: 50px;
   }
 
+  .containerT,
+  .containerF,
+  .containerG {
+    width: 65px;
+    height: 65px;    
+  }
+
   .card1,
   .card2,
   .card3 {
     width: 30%;
     height: 100px;
-  }
-
-  .containerF,
-  .containerG,
-  .containerT {
-    width: 65px;
-    height: 65px;
   }
 
   h3 {
