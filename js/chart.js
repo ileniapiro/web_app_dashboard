@@ -9,13 +9,13 @@ var chart = new Chart(ctx, {
   // The data for our dataset
   data: {
     responsive: true,
-    maintainAspectRatio: false,
-    xLabels: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"],
+    maintainAspectRatio: true,
+    xLabels: ["8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"],
     yLabels: ["0", "10", "20", "30", "40", "50"],
     datasets: [{
       backgroundColor: 'rgba(214, 236, 210, 0.2)',
       borderColor: 'rgb(190, 139, 248)',
-      data: [27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
+      data: [25, 15, 27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
       lineTension: 0,
       pointRadius: 5,
       pointBackgroundColor: 'rgb(232, 217, 249, 1)'
@@ -52,12 +52,12 @@ $("#hourly").on("click", function() {
     data: {
       responsive: true,
       maintainAspectRatio: false,
-      xLabels: ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"],
+      xLabels: ["8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm"],
       yLabels: ["0", "10", "20", "30", "40", "50"],
       datasets: [{
         backgroundColor: 'rgba(214, 236, 210, 0.2)',
         borderColor: 'rgb(190, 139, 248)',
-        data: [27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
+        data: [25, 15, 27, 30, 15, 35, 25, 40, 30, 20, 32, 15, 23, 27, 10],
         lineTension: 0,
         pointRadius: 5,
         pointBackgroundColor: 'rgba(232, 217, 249, 1)'
@@ -95,12 +95,12 @@ $("#daily").on("click", function() {
     data: {
       responsive: true,
       maintainAspectRatio: false,
-      xLabels: ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      xLabels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       yLabels: ["0", "100", "200", "300", "400", "500"],
       datasets: [{
         backgroundColor: 'rgba(214, 236, 210, 0.2)',
         borderColor: 'rgb(190, 139, 248)',
-        data: [220, 320, 300, 150, 225, 450, 300, 280, 400, 380, 200],
+        data: [120, 250, 220, 320, 300, 150, 225, 450, 300, 280, 400, 380, 200],
         lineTension: 0,
         pointRadius: 5,
         pointBackgroundColor: 'rgba(232, 217, 249, 1)'
@@ -138,12 +138,12 @@ $("#weekly").on("click", function() {
     data: {
       responsive: true,
       maintainAspectRatio: false,
-      xLabels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
+      xLabels: ["8-14", "15-21", "16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
       yLabels: ["500", "1000", "1500", "2000", "2500"],
       datasets: [{
         backgroundColor: 'rgba(214, 236, 210, 0.2)',
         borderColor: 'rgb(190, 139, 248)',
-        data: [0, 750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250],
+        data: [0, 500, 750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250],
         lineTension: 0,
         pointRadius: 5,
         pointBackgroundColor: 'rgba(232, 217, 249, 1)'
@@ -181,12 +181,12 @@ $("#monthly").on("click", function() {
     data: {
       responsive: true,
       maintainAspectRatio: false,
-      xLabels: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      xLabels: ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       yLabels: ["5000", "10000", "15000", "20000", "25000"],
       datasets: [{
         backgroundColor: 'rgba(214, 236, 210, 0.2)',
         borderColor: 'rgb(190, 139, 248)',
-        data: [2700, 3300, 15000, 13500, 23000, 4500, 3340, 17900, 22422, 12000, 9000],
+        data: [4000, 1700, 2700, 3300, 15000, 13500, 23000, 4500, 3340, 17900, 22422, 12000, 9000],
         lineTension: 0,
         pointRadius: 5,
         pointBackgroundColor: 'rgba(232, 217, 249, 1)'

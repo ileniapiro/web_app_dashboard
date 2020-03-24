@@ -260,6 +260,10 @@ h2 {
   margin: auto;
 }
 
+#mychart {
+ height: 180;
+}
+
 .mybtns h2 {
   font-size: 2em;
   margin-bottom: 5px;
