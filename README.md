@@ -6,7 +6,7 @@ This is an example of a Web App Dashboard
 
 As you can see from the image below the website is fully responsive.
 
-![Online Registration Form](https://github.com/ileniapiro/web_app_dashboard/raw/master/Dashboard-Portfolio.png)
+![Online Registration Form](https://github.com/ileniapiro/web_app_dashboard/raw/master/Dashboard-portfolio.png)
 
 ## Author
 
